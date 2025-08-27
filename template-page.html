@@ -9,36 +9,31 @@
   <title>Vite App</title>
 </head>
 
-<body class="bg-gray-950">
-  <main>
-    <h1 class="font-semibold text-white text-4xl lg:text-7xl mt-8 lg:mt-14 mb-14 lg:mb-28">Page title</h1>
-    <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
-      <div class="container mx-auto px-3">
-        <h2 class="font-semibold text-white text-3xl pt-3 pb-6">Example-title</h2>
-        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore eos accusamus esse
-          praesentium,
-          impedit
-          dolore. Aliquam ullam dolorem accusantium accusamus quos! Dolores deleniti, deserunt ea veritatis, aspernatur
-          quidem, itaque dignissimos voluptatem minima rerum quas numquam nulla ipsa. Repellendus animi qui nobis odio,
-          esse enim autem recusandae iste earum eveniet beatae.</p>
-      </div>
-    </section>
-    <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
-      <div class="container mx-auto px-3">
-        <h2 class="font-semibold text-white text-3xl pt-3 pb-6">Example-title</h2>
-        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore eos accusamus esse
-          praesentium,
-          impedit
-          dolore. Aliquam ullam dolorem accusantium accusamus quos! Dolores deleniti, deserunt ea veritatis, aspernatur
-          quidem, itaque dignissimos voluptatem minima rerum quas numquam nulla ipsa. Repellendus animi qui nobis odio,
-          esse enim autem recusandae iste earum eveniet beatae.</p>
-      </div>
-    </section>
-  </main>
-  <a href="nav.html"
-    class="navigation-link fixed left-6 bottom-6 bg-pink-500 text-white rounded-full py-1 px-3 hover:bg-pink-600">nav</a>
+<body class="bg-stone">
+  {{> header logo = 'logo.svg' }}
+  {{> page-title title="page-title"}}
+  <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-white text-3xl pt-3 pb-6">Example-title</h2>
+      <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore eos accusamus esse
+        praesentium,
+        impedit
+        dolore. Aliquam ullam dolorem accusantium accusamus quos! Dolores deleniti, deserunt ea veritatis, aspernatur
+        quidem, itaque dignissimos voluptatem minima rerum quas numquam nulla ipsa. Repellendus animi qui nobis odio,
+        esse enim autem recusandae iste earum eveniet beatae.</p>
+    </div>
+  </section>
+  <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-white text-3xl pt-3 pb-6">Example-title</h2>
+      <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore eos accusamus esse
+        praesentium,
+        impedit
+        dolore. Aliquam ullam dolorem accusantium accusamus quos! Dolores deleniti, deserunt ea veritatis, aspernatur
+        quidem, itaque dignissimos voluptatem minima rerum quas numquam nulla ipsa. Repellendus animi qui nobis odio,
+        esse enim autem recusandae iste earum eveniet beatae.</p>
+    </div>
+  </section>
+{{> footer }}
 </body>
-<script type="module" src="/src/main.js"></script>
-</body>
-
 </html>

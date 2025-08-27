@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet" />
+  <title>box-sizing</title>
+</head>
+
+<body class="bg-stone">
+  {{> header logo = 'logo.svg' }}
+  {{> page-title title="css - властивість box-sizing"}}
+  <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-white text-3xl pt-3 pb-6 ">Border-box
+      </h2>
+      <p class="text-xl mb-6 italic">Вказує, що ширину та висоту елемента визначає його вміст, включаючи внутрішні
+        відступи
+        та рамки
+      </p>
+      <div
+        class="h-72 w-72 border-3 box-border p-10 flex justify-center items-center text-3xl text-cyan border-neutral">
+        border-box
+      </div>
+    </div>
+  </section>
+  <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-white text-3xl pt-3 pb-6">Content-box
+      </h2>
+      <p class="text-xl mb-6 italic">Вказує, що ширину та висоту елемента визначає його вміст, а внутрішні та зовнішні
+        відступи додаються до
+        нього </p>
+      <div
+        class="h-72 w-72 border-3 box-content p-10 flex justify-center items-center text-3xl text-cyan border-neutral">
+        content-box
+      </div>
+    </div>
+  </section>
+  {{> footer }}
+</body>
+</html>

@@ -1,1 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+	--color-stone: #222831;
+	--color-neutral: #393e46;
+	--color-cyan: #1bf5ff;
+	--color-white: #eeeeee;
+
+	--text-h1: 48px;
+	--text-h2: 42px;
+	--text-h3: 36px;
+	--text-h4: 28px;
+	--text-h5: 24px;
+	--text-h6: 20px;
+
+	--margin-template: 100px;
+	--padding-template: 100px;
+
+	--font-funnel-display: "Funnel Display", sans-serif;
+}
+
+@layer components {
+	body {
+		font-family: var(--font-funnel-display);
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		color: var(--color-white);
+	}
+
+	h1 {
+		font-size: var(--text-h1);
+		color: var(--color-cyan);
+	}
+}

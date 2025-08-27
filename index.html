@@ -6,14 +6,16 @@
 	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="/src/style.css" rel="stylesheet" />
-	<title>Vite App</title>
+	<title>LemonSchool</title>
 </head>
-<a href="nav.html">nav</a>
 
-<body>
-
-
-	<script type="module" src="/src/main.js"></script>
+<body class="bg-stone">
+	<a href=" nav.html"
+		class="navigation-link fixed left-6 bottom-6 bg-pink-500 text-white rounded-full py-1 px-3 hover:bg-pink-600">
+		nav</a>
+	{{> header logo = 'logo.svg' }}
+	{{> page-title title="LemonSchool" subtitle="subtitle"}}
+	{{> footer }}
 </body>
 
 </html>
