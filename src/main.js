@@ -1,4 +1,33 @@
-import './style.css'
+const getLoremImage = () => {
+  const images = document.querySelectorAll("img");
+
+  images.forEach((item) => {
+    if (!item.getAttribute("src")) {
+      fetch("https://picsum.photos/640/360")
+        .then((response) => response.blob())
+        .then((blob) => (item.src = URL.createObjectURL(blob)))
+        .catch((error) => (item.src = "assets/img/cat-scottish.webp"));
+    }
+  });
+};
+
+
+const burgerBtn = document.querySelector('#burger');
+const mobileContainer = document.querySelector('#mobile-container');
+
+burgerBtn.addEventListener('click', () => {
+  mobileContainer.classList.toggle('hidden')
+  burgerBtn.classList.toggle('after:bg-purple')
+  burgerBtn.classList.toggle('before:bg-purple')
+  
+})
+
+document.querySelectorAll("img").length > 0 ? getLoremImage() : null;
+
+
+
+
+/*import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
@@ -19,6 +48,8 @@ document.querySelector('#app').innerHTML = `
       Click on the Vite logo to learn more
     </p>
   </div>
+import javascriptLogo from './javascript.svg'
 `
 
 setupCounter(document.querySelector('#counter'))
+*/
