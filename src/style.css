@@ -9,6 +9,7 @@
 	--color-purple:#5221E6;
 	--color-neutral-300: #C4C4C4;
 	--color-indigo-950: #181823;
+	--color-gray-400:#808080;
 
 	--text-h1: 48px;
 	--text-h2: 42px;
@@ -16,7 +17,6 @@
 	--text-h4: 28px;
 	--text-h5: 24px;
 	--text-h6: 20px;
-	--text-banner-title: 78px;
 
 	--margin-template: 100px;
 	--padding-template: 100px;
@@ -41,6 +41,16 @@
 	h1 {
 		font-size: var(--text-h1);
 	}
+	.banner-title{
+		font-size: 32px;
+		
+			@media (min-width: 768px){
+			font-size: 56px;
+		}
+			@media (min-width: 1024px){
+				font-size: 78px;
+		}
+	} 
 }
 [alt=""], img:not([alt]) {
 	filter: blur(2px);
