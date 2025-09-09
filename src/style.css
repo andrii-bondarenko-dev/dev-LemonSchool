@@ -16,6 +16,7 @@
 	--text-h4: 28px;
 	--text-h5: 24px;
 	--text-h6: 20px;
+	--text-banner-title: 78px;
 
 	--margin-template: 100px;
 	--padding-template: 100px;
@@ -39,7 +40,6 @@
 
 	h1 {
 		font-size: var(--text-h1);
-		color: var(--color-cyan);
 	}
 }
 [alt=""], img:not([alt]) {
