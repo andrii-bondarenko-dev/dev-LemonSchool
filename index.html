@@ -17,6 +17,8 @@
 		nav</a>
 	{{> header logo = 'logo.svg' alt="logo"}}
 	{{> page-title title="LemonSchool" subtitle="subtitle"}}
+	<button type="button" id="triger"
+		class=" mx-auto px-8 py-3 bg-amber-200 hover:bg-amber-500 cursor-pointer">Triger</button>
 	<div class="mx-auto px-3 max-w-7xl font-sen bg-black">
 		{{> header-portfolio}}
 		{{> banner}}
@@ -52,6 +54,10 @@
 		}}
 	</div>
 	{{> footer }}
+	{{> modal }}
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script type="module" src="/src/modal.js"></script>
+	<script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
